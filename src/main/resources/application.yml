@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ClientProject
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/${POSTGRES_DB:REProject}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:456852}
+    hikari:
+      schema: public
+
+server:
+  port: 8081
